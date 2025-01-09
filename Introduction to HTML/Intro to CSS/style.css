@@ -1,0 +1,25 @@
+
+* {
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+h3 {
+    color:aquamarine;
+}
+
+h4 {
+    color:teal;
+}
+
+.myclass{
+    color:lightcoral;
+}
+
+#myid{
+    color:powderblue;
+}
+
+h5 {
+    color:green;
+}
