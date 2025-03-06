@@ -1,0 +1,22 @@
+<html>
+    <head> 
+        <title> Activity 2 </title>
+    </head>
+
+    <body> 
+        <h2> Javascript Arrays </h2>
+        <h2> join() and pop() </h2>
+        <p>The join(p) method joins array elements into a string and the pop() method remones the last element from an array. </p>
+
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            document.getElementById("myjoin").innerHTML = fruits.join( "+" );
+            document.getElementById("myfirstpop").innerHTML="fruits"; fruits.pop();
+            document.getElementById("mysecondpop").innerHTML = fruits 
+        </script>
+    </body>
+</html>
