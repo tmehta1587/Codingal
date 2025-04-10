@@ -1,0 +1,39 @@
+
+<html> 
+    <head> Login Form </head>
+
+    <body> 
+        <h2> Login Form </h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <label for="username"> Username </label>
+            <input type="text" id="username" required>
+            <br>
+
+            <label for="password"> Password </label>
+            <input type="password" id="password" required>
+            <br>
+
+            <label for="age"> Age: </label>
+            <input type="number" id="age" required>
+
+            <button type="submit"> Login </button>
+            <p id="errorMessage" class="error"></p>
+        </form>
+
+        <script>
+            function validateForm() {
+                var age= document.getElementById("age").value;
+                var errorMessage= document.getElementById(errorMessage);
+
+                if (age<18) {
+                    errorMessage.innerHTML = "You must be 18 or older";
+                    return false;
+                }
+
+                errorMessage.innerHTML = "";
+                alert ("Login successful!");
+                return true;
+            }
+        </script>
+    </body>
+</html>
