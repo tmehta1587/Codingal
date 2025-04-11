@@ -1,0 +1,9 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    background: navy;
+    font-size: 8px;
+}

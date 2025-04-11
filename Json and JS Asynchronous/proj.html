@@ -1,0 +1,17 @@
+<html> 
+    <body>
+    <button onclick="getQuote()">Get Quote of the Day</button>
+<div id="output"></div>
+
+<script>
+  async function getQuote() {
+    const res = await fetch("https://api.quotable.io/random");
+    const data = await res.json();
+    document.getElementById("output").innerHTML = `
+      <p><strong>"${data.content}"</strong></p>
+      <p><em>- ${data.author}</em></p>
+    `;
+  }
+</script>
+</body>
+</html>
