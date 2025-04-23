@@ -1,17 +1,19 @@
-<html> 
-    <body>
-    <button onclick="getQuote()">Get Quote of the Day</button>
-<div id="output"></div>
 
-<script>
-  async function getQuote() {
-    const res = await fetch("https://api.quotable.io/random");
-    const data = await res.json();
-    document.getElementById("output").innerHTML = `
-      <p><strong>"${data.content}"</strong></p>
-      <p><em>- ${data.author}</em></p>
-    `;
-  }
-</script>
-</body>
+<html>
+  <heading>  Await/Async </heading>
+
+  <body> 
+    <h1 id="result"> </h1>
+    <script> 
+      async function add(a,b) {
+        let response = await a+b; 
+        display(response);
+      }
+
+      function display(some) {
+        document.getElementById("result").innerHTML = some;
+      }
+      add(45,84)
+    </script>
+  </body>
 </html>
