@@ -1,0 +1,19 @@
+
+<html> 
+    <heading> Errors </heading>
+
+    <body> 
+    <p> Example of <b> Errors </b> and <b> Catch </b> </p>
+    <p id="error_message"> </p>
+
+    <script> 
+        try {
+            addalert("Hello!");
+        }
+
+        catch(err) {
+            document.getElementById("error_message").innerHTML=err.message;
+        }
+    </script>
+</body>
+</html>
