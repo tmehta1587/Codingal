@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Georgia, "Times new roman", serif;
+}
+
+.border {
+    width: 380 px;
+    min-height: 320px;
+    margin-top: 65px;
+    padding: 0 12px 15px 12px;
+    background-color: #9fc5d2;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    background-color: #286f91;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+
+.word {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.header .word{
+    font-size: 30px;
+    margin: 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.textbook { 
+    width: 220px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid #444;
+    border-radius: 9px;
+    background-color: #287495;
+    color: white;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    outline: none;
+}
+
+.textbook::placeholder {
+    color: white;
+    opacity : 1;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.textbook-focus {
+    border-color: #222;
+}
+
+.btn {
+    width: 116px;
+    height: 36px;
+    background-color: #287495;
+    border: 2px solid #444;
+    border-radius: 9px;
+    color: white;
+    font-family: Georgia, "Times new roman", serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn::hover {
+    background-color: #21627f;
+}
+
+.bottom {
+    color: #367b98;
+    font-size: 14px;
+    font-style : italic;
+    font-weight: bold;
+}
+
+a.bottom { 
+    text-decoration: underline;
+}
+
+.msg {
+    color: #8b0000;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
